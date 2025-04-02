@@ -1,27 +1,123 @@
-# Portfolio
+# 🌐 Personal Portfolio - Arian Fotouhi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+A personal portfolio website built with **Angular 15**, designed to showcase projects, certifications, and skills. Deployed using **GitHub Pages**.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Quick Start
 
-## Code scaffolding
+### 🔧 Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [Angular CLI](https://angular.io/cli) installed globally:
 
-## Build
+```bash
+npm install -g @angular/cli
+🛠️ Local Development
+Start a local development server:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+bash
+Copy
+Edit
+npm install
+ng serve
+Then visit: http://localhost:4200
 
-## Running unit tests
+✅ The app auto-reloads when you save changes.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+⚙️ Building the App
+To build the project for production:
 
-## Running end-to-end tests
+bash
+Copy
+Edit
+ng build --base-href "https://arianfotouhi.github.io/PersonalWeb/"
+This creates a dist/ folder with deployable files.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+🚢 Deploying to GitHub Pages
+Make sure the angular.json is configured correctly with:
 
-## Further help
+json
+Copy
+Edit
+"outputPath": "dist/your-project-name",
+Then deploy with Angular CLI:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+bash
+Copy
+Edit
+ng deploy --base-href=/PersonalWeb/
+Or manually:
+
+bash
+Copy
+Edit
+npx angular-cli-ghpages --dir=dist/your-project-name
+💡 Your site will be live at: https://arianfotouhi.github.io/PersonalWeb/
+
+🧪 Testing
+Run unit tests:
+
+bash
+Copy
+Edit
+ng test
+🧩 Making Feature Changes
+Here are some tips if you're modifying or adding to the portfolio:
+
+➕ Add New Project or Certificate
+Add the image to:
+
+bash
+Copy
+Edit
+src/assets/projects/
+or
+src/assets/certificate/
+Update the respective HTML section with:
+
+html
+Copy
+Edit
+<img src="https://arianfotouhi.github.io/PersonalWeb/assets/projects/new-project.jpg" />
+🎨 Style or Content Edits
+Modify components in src/app/
+
+Global styles: src/styles.css
+
+Meta tags / page title: src/index.html
+
+🔧 Generate New Angular Features
+bash
+Copy
+Edit
+ng generate component new-section
+ng generate service api
+🗂 Project Structure
+bash
+Copy
+Edit
+src/
+├── app/                  # Angular components
+├── assets/
+│   ├── certificate/      # Certificates shown in gallery
+│   └── projects/         # Project thumbnails
+├── environments/
+├── index.html
+├── styles.css
+🙌 Contributions
+Pull requests are welcome if you'd like to improve or suggest features.
+
+📄 License
+This project is open-sourced under the MIT License.
+
+✨ Author
+Arian Fotouhi
+
+GitHub
+
+vbnet
+Copy
+Edit
+
+Let me know if you want a version with badges, GitHub Actions CI/CD, or links to demo videos!
