@@ -14,9 +14,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     AOS.init();
     const options = {
-      strings: ['Machine Learning','Deep Learning', 'Web Development'],
-      typeSpeed: 100,
-      backSpeed: 100,
+      strings: ['Generative AI', 'Software Engineering to build them', 'and MLOps to deploy them'],
+      typeSpeed: 80,
+      backSpeed: 50,
       showCursor: true,
       cursorChar: '|',
       loop: true
@@ -26,12 +26,6 @@ export class HomeComponent implements OnInit {
 
   // this.my_texts = ['AI', 'Full Stack'];
 
-  const HEROES = [
-    {id: 1, name:'Superman'},
-    {id: 2, name:'Batman'},
-    {id: 5, name:'BatGirl'},
-    {id: 3, name:'Robin'},
-    {id: 4, name:'Flash'}
-  ];
+
   }
 }
