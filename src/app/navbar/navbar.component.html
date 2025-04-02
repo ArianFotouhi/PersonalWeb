@@ -1,0 +1,42 @@
+<!--
+
+<ul class="nav nav-pills nav-fill gap-2 p-1 small bg-dark rounded-0 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+  <li class="nav-item" role="presentation">
+    <a [routerLink]="['']"><button class="nav-link rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a [routerLink]="['skills']"><button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"> Skills</button></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a [routerLink]="['projects']"><button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Selected Projects</button></a>
+
+  </li>
+  <li class="nav-item" role="presentation">
+    <a [routerLink]="['certificates']"><button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Certificates</button></a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a [routerLink]="['about']"><button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</button></a>
+  </li>
+</ul> -->
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 2;">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['']">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" [routerLink]="['skills']">Skills</a>
+        <a class="nav-link" [routerLink]="['projects']">Selected Projects</a>
+        <a class="nav-link" [routerLink]="['certificates']">Certificates</a>
+        <a class="nav-link" [routerLink]="['about']">About</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
